@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Music of John Tesh | Licensing for Film, TV &amp; Advertising</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Cormorant:ital,wght@0,500;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{ --cream:#FFFFFF; --cream-deep:#F6F6F4; --ink:#000000; --gray:#ECECEC; --navy:#1D2A44; --gold:#B4842B; --gold-light:#D6AB55; --line:rgba(42,31,26,0.14); --indigo:#362868; --indigo-soft:#4A3888; --rust:#B24A24; --rust-soft:#D66A3C; --wine:#7A1F3D; --wine-soft:#9C3355; --forest:#285C3E; --forest-soft:#3C7A54; --amber:#C08A1E; --amber-soft:#DDAE45; --max:1180px; }
+  *{ box-sizing:border-box; } html{ scroll-behavior:smooth; }
+  body{ margin:0; background:var(--cream); color:var(--ink); font-family:'Jost',sans-serif; font-weight:300; line-height:1.7; }
+  h1,h2,h3,h4{ font-family:'Cormorant Garamond',serif; color:var(--ink); margin:0; font-weight:500; }
+  a{ color:inherit; text-decoration:none; } img{ max-width:100%; display:block; }
+  .wrap{ max-width:var(--max); margin:0 auto; padding:0 32px; }
+  .eyebrow{ letter-spacing:0.32em; text-transform:uppercase; font-size:14px; color:var(--gold); font-weight:500; }
+  .flourish{ display:flex; align-items:center; justify-content:center; gap:14px; margin:22px 0 30px; }
+  .flourish::before,.flourish::after{ content:""; flex:1; max-width:120px; height:1px; background:linear-gradient(90deg,transparent,var(--gold-light) 40%,var(--gold-light) 60%,transparent); }
+  .flourish .diamond{ width:7px; height:7px; background:var(--gold); transform:rotate(45deg); flex-shrink:0; }
+  header.site{ position:sticky; top:0; z-index:50; background:rgba(255,255,255,0.94); backdrop-filter:blur(6px); border-bottom:1px solid var(--line); }
+  .nav{ display:flex; align-items:center; justify-content:space-between; padding:18px 32px; max-width:var(--max); margin:0 auto; }
+  .nav .mark{ font-family:'Cormorant Garamond',serif; font-size:25px; letter-spacing:0.08em; color:var(--ink); }
+  .nav .mark span{ color:var(--gold); }
+  .nav-links{ display:flex; gap:34px; align-items:center; font-size:16px; }
+  .nav-links a{ color:var(--ink); }
+  .nav-links a:hover{ color:var(--gold); }
+  .btn-license{ background:var(--navy); color:var(--cream) !important; padding:10px 22px; font-size:14.5px; letter-spacing:0.12em; text-transform:uppercase; border-radius:2px; }
+  .btn-license:hover{ background:var(--gold); }
+  .nav-toggle{ display:none; }
+  .hero-image{ width:100%; overflow:hidden; }
+  .hero-image img{ width:100%; height:auto; }
+  .hero-sub{ text-align:center; padding:40px 32px 16px; max-width:880px; margin:0 auto; }
+  .hero-sub p{ font-size:22px; font-weight:300; line-height:1.75; }
+  section{ padding:56px 0; } section.tight{ padding:40px 0; }
+  .player-card{ display:flex; align-items:center; gap:24px; background:var(--cream-deep); border:1px solid var(--line); padding:28px 32px; }
+  .player-toggle{ flex-shrink:0; width:56px; height:56px; border-radius:50%; background:var(--gold); border:none; cursor:pointer; display:flex; align-items:center; justify-content:center; }
+  .player-toggle svg{ width:20px; height:20px; fill:var(--ink); }
+  .player-body{ flex:1; min-width:0; }
+  .player-title{ font-family:'Cormorant Garamond',serif; font-size:22px; margin:0 0 2px; }
+  .player-artist{ font-size:14px; opacity:.65; margin:0 0 14px; }
+  .player-scrubber{ display:flex; align-items:center; gap:12px; }
+  .player-time{ font-size:12px; opacity:.6; min-width:36px; text-align:center; }
+  .player-range{ flex:1; height:4px; border-radius:2px; background:var(--line); cursor:pointer; }
+  .section-head{ text-align:center; max-width:720px; margin:0 auto 34px; }
+  .section-head h2{ font-size:48px; margin-top:10px; }
+  .why-grid{ display:grid; grid-template-columns:1.15fr 0.85fr; gap:64px; align-items:start; }
+  .why-copy p{ font-size:19px; }
+  .why-copy p.lead{ font-family:'Cormorant',serif; font-style:italic; font-size:26px; line-height:1.6; margin-bottom:26px; }
+  .credentials{ background:var(--cream-deep); border:1px solid var(--line); padding:40px 36px; }
+  .credentials .eyebrow{ display:block; margin-bottom:18px; }
+  .credentials ul{ list-style:none; margin:0; padding:0; }
+  .credentials li{ padding:14px 0; border-top:1px solid var(--line); font-size:18px; display:flex; gap:12px; }
+  .credentials li:first-child{ border-top:none; }
+  section.collections{ background:var(--gray); }
+  .collections .eyebrow{ color:var(--gold); }
+  .tiles{ display:grid; grid-template-columns:repeat(3,1fr); gap:3px; background:rgba(0,0,0,0.08); }
+  .tile{ padding:42px 32px; min-height:260px; display:flex; flex-direction:column; justify-content:space-between; }
+  .tile.t-indigo{ background:linear-gradient(155deg,var(--indigo),var(--indigo-soft)); }
+  .tile.t-rust{ background:linear-gradient(155deg,var(--rust),var(--rust-soft)); }
+  .tile.t-wine{ background:linear-gradient(155deg,var(--wine),var(--wine-soft)); }
+  .tile.t-forest{ background:linear-gradient(155deg,var(--forest),var(--forest-soft)); }
+  .tile.t-amber{ background:linear-gradient(155deg,var(--amber),var(--amber-soft)); }
+  .tile.t-ink{ background:linear-gradient(155deg,#201812,#3A2C22); }
+  .tile h3{ color:var(--cream); font-size:38px; font-weight:600; line-height:1.15; }
+  .tile .cat-label{ font-size:26px; letter-spacing:0.03em; text-transform:uppercase; font-weight:700; color:var(--cream); margin-bottom:14px; display:block; }
+  .tile ul{ list-style:none; margin:18px 0 0; padding:0; display:flex; flex-wrap:wrap; gap:8px 10px; }
+  .tile li{ font-size:15px; color:rgba(245,238,221,0.9); border:1px solid rgba(245,238,221,0.32); padding:5px 12px; }
+  .tile-listen{ align-self:flex-start; margin-top:20px; padding:10px 22px; font-size:13px; letter-spacing:0.12em; text-transform:uppercase; color:var(--cream); border:1px solid rgba(245,238,221,0.55); }
+  .sound-row{ display:flex; justify-content:space-between; gap:20px; flex-wrap:wrap; margin-top:34px; }
+  .sound-item{ flex:1; min-width:180px; text-align:center; padding:0 12px; }
+  .sound-item .dot{ width:10px; height:10px; margin:0 auto 16px; transform:rotate(45deg); }
+  .sound-item.c-indigo .dot{ background:var(--indigo); }
+  .sound-item.c-rust .dot{ background:var(--rust); }
+  .sound-item.c-wine .dot{ background:var(--wine); }
+  .sound-item.c-forest .dot{ background:var(--forest); }
+  .sound-item.c-amber .dot{ background:var(--amber); }
+  .sound-item h4{ font-size:23px; margin-bottom:10px; }
+  .sound-item p{ font-size:17px; }
+  .sound-divider{ width:1px; background:var(--line); align-self:stretch; }
+  .license-banner{ background:var(--gray); text-align:center; padding:56px 32px; }
+  .license-banner h2{ font-size:44px; margin-bottom:16px; }
+  .license-banner p{ max-width:560px; margin:0 auto 30px; font-size:19px; }
+  .license-banner .cta.primary{ background:var(--gold); border:1px solid var(--gold-light); color:#000; padding:16px 40px; font-size:15px; text-transform:uppercase; letter-spacing:0.14em; }
+  .contact-grid{ display:grid; grid-template-columns:1fr 1fr; gap:60px; }
+  .contact-copy p{ font-size:18px; }
+  .contact-list{ list-style:none; margin:30px 0 0; padding:0; }
+  .contact-list li{ padding:18px 0; border-top:1px solid var(--line); }
+  .contact-list li:last-child{ border-bottom:1px solid var(--line); }
+  .contact-list .label{ display:block; font-size:13px; letter-spacing:0.2em; text-transform:uppercase; color:var(--gold); margin-bottom:4px; }
+  .contact-list .value{ font-size:19px; }
+  .contact-card{ background:linear-gradient(160deg,var(--wine),var(--rust)); color:var(--cream); padding:44px 40px; }
+  .contact-card .eyebrow{ color:var(--gold-light); }
+  .contact-card h3{ color:var(--cream); font-size:32px; margin:12px 0 18px; }
+  .contact-card p{ font-size:17px; color:rgba(245,238,221,0.82); margin-bottom:26px; }
+  .contact-card .cta.primary{ display:inline-block; padding:14px 30px; font-size:14.5px; letter-spacing:0.14em; text-transform:uppercase; color:var(--ink); background:var(--cream); }
+  footer{ padding:40px 32px; text-align:center; font-size:15px; border-top:1px solid var(--line); }
+  footer a{ color:var(--gold); }
+  @media (max-width:860px){ .why-grid,.contact-grid{ grid-template-columns:1fr; } .tiles{ grid-template-columns:1fr 1fr; } .nav-links{ position:fixed; top:64px; left:0; right:0; background:var(--cream); flex-direction:column; align-items:flex-start; padding:20px 32px 30px; border-bottom:1px solid var(--line); display:none; } .nav-links.open{ display:flex; } .nav-toggle{ display:block; background:none; border:none; font-size:22px; color:var(--ink); cursor:pointer; } .sound-row{ flex-direction:column; } .sound-divider{ display:none; } }
+  @media (max-width:560px){ .tiles{ grid-template-columns:1fr; } .section-head h2{ font-size:36px; } }
+</style>
+</head>
+<body>
+<header class="site" id="top">
+  <nav class="nav">
+    <div class="mark">JOHN <span>TESH</span></div>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">&#9776;</button>
+    <div class="nav-links" id="navLinks">
+      <a href="#top" id="homeLink">Home</a>
+      <a href="#collections">Catalog</a>
+      <a href="#sound">The Sound</a>
+      <a href="#contact">Contact</a>
+      <a class="btn-license" href="https://teshmusic.sourceaudio.com/home" target="_blank" rel="noopener">License Music</a>
+    </div>
+  </nav>
+</header>
+<div class="hero-image"><img src="header.jpg" alt="The Music of John Tesh. Music for film, TV and advertising."></div>
+<div class="hero-sub"><p>Award winning instrumental, orchestral, contemporary, sports, holiday, and inspirational music available for film, television, advertising, trailers, promos, and branded content.</p></div>
+<section id="listen" class="tight">
+  <div class="wrap">
+    <div class="player-card">
+      <button class="player-toggle" id="playBtn" aria-label="Play track">
+        <svg id="iconPlay" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+        <svg id="iconPause" viewBox="0 0 24 24" style="display:none;"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+      </button>
+      <div class="player-body">
+        <p class="player-title">Featured Track</p>
+        <p class="player-artist">John Tesh</p>
+        <div class="player-scrubber">
+          <span class="player-time" id="curTime">0:00</span>
+          <input type="range" class="player-range" id="playerRange" value="0" min="0" max="100" step="1">
+          <span class="player-time" id="durTime">0:00</span>
+        </div>
+      </div>
+      <audio id="trackAudio" preload="metadata" src="https://www.dropbox.com/scl/fi/d9pg3cma8yti7ds6s0l6e/123.mp3?rlkey=1io4wr0o6sm2x9fpdwalhgiy7&dl=1"></audio>
+    </div>
+  </div>
+</section>
+<section id="why">
+  <div class="wrap why-grid">
+    <div class="why-copy">
+      <span class="eyebrow">Why John Tesh</span>
+      <h2 style="font-size:40px; margin: 10px 0 24px;">Three decades of music built for picture.</h2>
+      <p class="lead">A catalog shaped for music supervisors, not just listeners.</p>
+      <p>For more than three decades, John Tesh has created music that blends cinematic orchestration, contemporary instrumentation, emotional piano performance, inspirational themes, sports energy, holiday warmth, and broadcast ready production. His catalog spans uplifting instrumentals, dramatic orchestral works, romantic melodies, faith based compositions, seasonal favorites, and high energy sports music, offering music supervisors a versatile collection suitable for film, television, advertising, trailers, documentaries, sports programming, branded content, and digital media.</p>
+      <p>Whether a project calls for inspiration, triumph, reflection, intimacy, excitement, or celebration, the John Tesh catalog provides emotionally resonant music that enhances storytelling while remaining instantly accessible to broad audiences.</p>
+    </div>
+    <div class="credentials">
+      <span class="eyebrow">Credentials</span>
+      <ul>
+        <li>Multi platinum recording artist</li>
+        <li>Emmy winning composer</li>
+        <li>Creator of the iconic "Roundball Rock" theme</li>
+        <li>Extensive catalog spanning orchestral, piano, pop instrumental, sports, holiday, inspirational, and cinematic music</li>
+        <li>Decades of broadcast, television, and live performance experience</li>
+      </ul>
+    </div>
+  </div>
+</section>
+<section class="collections" id="collections">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Featured Collections</span>
+      <h2>Five ways into the catalog.</h2>
+    </div>
+    <div class="tiles">
+      <div class="tile t-indigo"><div><span class="cat-label">Hit Film and Pop Songs</span><h3>Story first.</h3></div><ul><li>Inspirational</li><li>Uplifting</li><li>Reflective</li><li>Triumphant</li></ul><a class="tile-listen" href="https://teshmusic.sourceaudio.com/catalog/21492?page=albums" target="_blank" rel="noopener">Listen Now</a></div>
+      <div class="tile t-rust"><div><span class="cat-label">Sports &amp; Competition</span><h3>Built for the arena.</h3></div><ul><li>Energy</li><li>Victory</li><li>Momentum</li><li>Determination</li></ul><a class="tile-listen" href="https://teshmusic.sourceaudio.com/catalog/21493?page=albums" target="_blank" rel="noopener">Listen Now</a></div>
+      <div class="tile t-wine"><div><span class="cat-label">Classical</span><h3>Close and intimate.</h3></div><ul><li>Elegant</li><li>Romantic</li><li>Contemporary</li><li>Intimate</li></ul><a class="tile-listen" href="https://teshmusic.sourceaudio.com/catalog/21490?page=albums" target="_blank" rel="noopener">Listen Now</a></div>
+      <div class="tile t-forest"><div><span class="cat-label">Holiday &amp; Seasonal</span><h3>Warmth on cue.</h3></div><ul><li>Christmas</li><li>Family</li><li>Warmth</li><li>Nostalgia</li></ul><a class="tile-listen" href="https://teshmusic.sourceaudio.com/catalog/21488?page=albums" target="_blank" rel="noopener">Listen Now</a></div>
+      <div class="tile t-amber"><div><span class="cat-label">Faith &amp; Inspirational</span><h3>Human stories.</h3></div><ul><li>Hope</li><li>Spiritual</li><li>Redemptive</li><li>Human Stories</li></ul><a class="tile-listen" href="https://teshmusic.sourceaudio.com/catalog/21489?page=albums" target="_blank" rel="noopener">Listen Now</a></div>
+      <div class="tile t-ink" style="justify-content:center; align-items:flex-start;"><span class="cat-label">Full Catalog</span><h3>Everything, searchable by mood, tempo, and instrumentation.</h3><a class="cta primary" style="margin-top:20px; display:inline-block; padding:14px 30px; font-size:14.5px; letter-spacing:0.14em; text-transform:uppercase; border:1px solid var(--gold-light); background:var(--gold); color:#000;" href="https://teshmusic.sourceaudio.com/home" target="_blank" rel="noopener">Search and License</a></div>
+    </div>
+  </div>
+</section>
+<section id="sound">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">The John Tesh Sound</span>
+      <h2>What makes it work for picture.</h2>
+    </div>
+    <div class="sound-row">
+      <div class="sound-item c-indigo"><div class="dot"></div><h4>Orchestral Scale</h4><p>Full arrangements that carry weight without overwhelming dialogue or narration.</p></div>
+      <div class="sound-divider"></div>
+      <div class="sound-item c-rust"><div class="dot"></div><h4>Contemporary Accessibility</h4><p>Modern production choices that sit comfortably in today's film and TV soundscape.</p></div>
+      <div class="sound-divider"></div>
+      <div class="sound-item c-wine"><div class="dot"></div><h4>Melodic Storytelling</h4><p>Themes that develop with a scene rather than sitting underneath it.</p></div>
+      <div class="sound-divider"></div>
+      <div class="sound-item c-forest"><div class="dot"></div><h4>Broadcast Ready Production</h4><p>Mixed and mastered to the standard of decades on network television.</p></div>
+      <div class="sound-divider"></div>
+      <div class="sound-item c-amber"><div class="dot"></div><h4>Positive Emotional Resonance</h4><p>Music that lifts a moment rather than merely filling silence.</p></div>
+    </div>
+  </div>
+</section>
+<div class="license-banner">
+  <div class="flourish"><div class="diamond"></div></div>
+  <h2>Search and license the full catalog on SourceAudio.</h2>
+  <p>Browse by mood, genre, tempo, and instrumentation, preview tracks, and clear licenses directly through John Tesh's official SourceAudio page.</p>
+  <a class="cta primary" href="https://teshmusic.sourceaudio.com/home" target="_blank" rel="noopener">Visit teshmusic.sourceaudio.com</a>
+</div>
+<section id="contact">
+  <div class="wrap contact-grid">
+    <div class="contact-copy">
+      <span class="eyebrow">Contact</span>
+      <h2 style="font-size:38px; margin:10px 0 20px;">For custom needs, direct licensing questions, or sync opportunities.</h2>
+      <p>For projects that call for a specific cue, a custom edit, or terms outside the standard SourceAudio license, reach out directly.</p>
+      <ul class="contact-list">
+        <li><span class="label">Licensing Portal</span><a class="value" href="https://teshmusic.sourceaudio.com/home" target="_blank" rel="noopener">teshmusic.sourceaudio.com</a></li>
+        <li><span class="label">Sync &amp; Custom Requests</span><a class="value" href="mailto:steve@viewpointconsultingservices.com">steve@viewpointconsultingservices.com</a></li>
+      </ul>
+    </div>
+    <div class="contact-card">
+      <span class="eyebrow">Music Supervisors</span>
+      <h3>Need something specific?</h3>
+      <p>Send the scene, the runtime, and the mood you are after. A member of the team will point you to tracks in the catalog or discuss a custom cue.</p>
+      <a class="cta primary" href="https://teshmusic.sourceaudio.com/home" target="_blank" rel="noopener">Search the catalog</a>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="flourish"><div class="diamond"></div></div>
+  <p>&copy; 2026 The Music of John Tesh. Licensing available through <a href="https://teshmusic.sourceaudio.com/home" target="_blank" rel="noopener">SourceAudio</a>.</p>
+</footer>
+<script>
+  const navToggle=document.getElementById('navToggle');
+  const navLinks=document.getElementById('navLinks');
+  navToggle.addEventListener('click',()=>{ const open=navLinks.classList.toggle('open'); navToggle.setAttribute('aria-expanded',open?'true':'false'); });
+  const homeLink=document.getElementById('homeLink');
+  homeLink.addEventListener('click',(e)=>{ e.preventDefault(); window.scrollTo({top:0,behavior:'smooth'}); navLinks.classList.remove('open'); });
+  const audio=document.getElementById('trackAudio');
+  const playBtn=document.getElementById('playBtn');
+  const iconPlay=document.getElementById('iconPlay');
+  const iconPause=document.getElementById('iconPause');
+  const range=document.getElementById('playerRange');
+  const curTime=document.getElementById('curTime');
+  const durTime=document.getElementById('durTime');
+  function fmtTime(t){ if(isNaN(t)||t===Infinity) return '0:00'; const m=Math.floor(t/60); const s=Math.floor(t%60).toString().padStart(2,'0'); return `${m}:${s}`; }
+  playBtn.addEventListener('click',()=>{ if(audio.paused){audio.play();}else{audio.pause();} });
+  audio.addEventListener('play',()=>{ iconPlay.style.display='none'; iconPause.style.display='block'; });
+  audio.addEventListener('pause',()=>{ iconPlay.style.display='block'; iconPause.style.display='none'; });
+  audio.addEventListener('ended',()=>{ iconPlay.style.display='block'; iconPause.style.display='none'; });
+  audio.addEventListener('loadedmetadata',()=>{ range.max=audio.duration; durTime.textContent=fmtTime(audio.duration); });
+  audio.addEventListener('timeupdate',()=>{ range.value=audio.currentTime; curTime.textContent=fmtTime(audio.currentTime); });
+  range.addEventListener('input',()=>{ audio.currentTime=range.value; });
+</script>
+</body>
+</html>
