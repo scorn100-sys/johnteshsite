@@ -33,15 +33,6 @@
   .hero-sub{ text-align:center; padding:40px 32px 16px; max-width:880px; margin:0 auto; }
   .hero-sub p{ font-size:22px; font-weight:300; line-height:1.75; }
   section{ padding:56px 0; } section.tight{ padding:40px 0; }
-  .player-card{ display:flex; align-items:center; gap:24px; background:var(--cream-deep); border:1px solid var(--line); padding:28px 32px; }
-  .player-toggle{ flex-shrink:0; width:56px; height:56px; border-radius:50%; background:var(--gold); border:none; cursor:pointer; display:flex; align-items:center; justify-content:center; }
-  .player-toggle svg{ width:20px; height:20px; fill:var(--ink); }
-  .player-body{ flex:1; min-width:0; }
-  .player-title{ font-family:'Cormorant Garamond',serif; font-size:22px; margin:0 0 2px; }
-  .player-artist{ font-size:14px; opacity:.65; margin:0 0 14px; }
-  .player-scrubber{ display:flex; align-items:center; gap:12px; }
-  .player-time{ font-size:12px; opacity:.6; min-width:36px; text-align:center; }
-  .player-range{ flex:1; height:4px; border-radius:2px; background:var(--line); cursor:pointer; }
   .section-head{ text-align:center; max-width:720px; margin:0 auto 34px; }
   .section-head h2{ font-size:48px; margin-top:10px; }
   .why-grid{ display:grid; grid-template-columns:1.15fr 0.85fr; gap:64px; align-items:start; }
@@ -116,26 +107,6 @@
 </header>
 <div class="hero-image"><img src="header.jpg" alt="The Music of John Tesh. Music for film, TV and advertising."></div>
 <div class="hero-sub"><p>Award winning instrumental, orchestral, contemporary, sports, holiday, and inspirational music available for film, television, advertising, trailers, promos, and branded content.</p></div>
-<section id="listen" class="tight">
-  <div class="wrap">
-    <div class="player-card">
-      <button class="player-toggle" id="playBtn" aria-label="Play track">
-        <svg id="iconPlay" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-        <svg id="iconPause" viewBox="0 0 24 24" style="display:none;"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-      </button>
-      <div class="player-body">
-        <p class="player-title">Featured Track</p>
-        <p class="player-artist">John Tesh</p>
-        <div class="player-scrubber">
-          <span class="player-time" id="curTime">0:00</span>
-          <input type="range" class="player-range" id="playerRange" value="0" min="0" max="100" step="1">
-          <span class="player-time" id="durTime">0:00</span>
-        </div>
-      </div>
-      <audio id="trackAudio" preload="metadata" src="https://www.dropbox.com/scl/fi/d9pg3cma8yti7ds6s0l6e/123.mp3?rlkey=1io4wr0o6sm2x9fpdwalhgiy7&dl=1"></audio>
-    </div>
-  </div>
-</section>
 <section id="why">
   <div class="wrap why-grid">
     <div class="why-copy">
@@ -227,22 +198,7 @@
   navToggle.addEventListener('click',()=>{ const open=navLinks.classList.toggle('open'); navToggle.setAttribute('aria-expanded',open?'true':'false'); });
   const homeLink=document.getElementById('homeLink');
   homeLink.addEventListener('click',(e)=>{ e.preventDefault(); window.scrollTo({top:0,behavior:'smooth'}); navLinks.classList.remove('open'); });
-  const audio=document.getElementById('trackAudio');
-  const playBtn=document.getElementById('playBtn');
-  const iconPlay=document.getElementById('iconPlay');
-  const iconPause=document.getElementById('iconPause');
-  const range=document.getElementById('playerRange');
-  const curTime=document.getElementById('curTime');
-  const durTime=document.getElementById('durTime');
-  function fmtTime(t){ if(isNaN(t)||t===Infinity) return '0:00'; const m=Math.floor(t/60); const s=Math.floor(t%60).toString().padStart(2,'0'); return `${m}:${s}`; }
-  playBtn.addEventListener('click',()=>{ if(audio.paused){audio.play();}else{audio.pause();} });
-  audio.addEventListener('play',()=>{ iconPlay.style.display='none'; iconPause.style.display='block'; });
-  audio.addEventListener('pause',()=>{ iconPlay.style.display='block'; iconPause.style.display='none'; });
-  audio.addEventListener('ended',()=>{ iconPlay.style.display='block'; iconPause.style.display='none'; });
-  audio.addEventListener('loadedmetadata',()=>{ range.max=audio.duration; durTime.textContent=fmtTime(audio.duration); });
-  audio.addEventListener('timeupdate',()=>{ range.value=audio.currentTime; curTime.textContent=fmtTime(audio.currentTime); });
-  range.addEventListener('input',()=>{ audio.currentTime=range.value; });
+
 </script>
 </body>
 </html>
-
